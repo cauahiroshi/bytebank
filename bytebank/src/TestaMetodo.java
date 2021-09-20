@@ -4,6 +4,7 @@ public class TestaMetodo {
 		Conta contaDoPaulo = new Conta();
 		contaDoPaulo.saldo = 100;
 		contaDoPaulo.deposita(50);
+		contaDoPaulo.titular = "Paulo Silveira"; 
 		System.out.println(contaDoPaulo.saldo);
 		boolean conseguiuSacar = contaDoPaulo.saca(20);
 		System.out.println(contaDoPaulo.saldo);
@@ -20,6 +21,10 @@ public class TestaMetodo {
 
 		System.out.println(contaDoPaulo.saldo);
 		System.out.println(contaDaMarcela.saldo);
+		
+		System.out.println(contaDoPaulo.titular);
+		
+		
 
 	}
 }
